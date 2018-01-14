@@ -1,0 +1,259 @@
+<html>
+        <head>
+          <!-- <link rel="stylesheet" href="css/bootstrap.min.css"/> -->
+          <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+          <link rel="stylesheet" href="css/style.css"/>
+          <title>Rent Car - Online</title>
+        </head>
+        <body>
+          <div class="navbar navbar-inverse">
+            <div class="navbar-inner">
+              <div class="container">
+                <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              
+                <div class="nav-collapse collapse">
+                  <ul class="nav">
+                    <li class="active"><a href="/">HOME</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="/dashboard">Admin</a></li>
+                  </ul>
+                <div class="pull-right">
+                  <a class="btn pull-right" role="button" data-toggle="modal" data-target="#modallogin" style="margin:10px 5px 5px 10px;">Sign in</a>
+                </div>
+                </div><!--/.nav-collapse -->
+              </div>
+            </div>
+          </div>
+    
+          <!-- PAGE-HEADER-->
+            <div class="page-header">
+              <div class="container">
+                <div class="row-fluid">
+                  <div class="span3">
+                    <h1><a class="brand" href="#">RENT CAR</a></h1>
+                  </div>
+                  <div class="span9">
+                    <div class="row-fluid">
+                      <div class="span8 text-center">
+                        <div style="padding-top:20px;">
+                          <form class="form-search">
+                            <div class="input-append">
+                            <input class="span12 search-query" type="text">
+                            <button type="submit" class="btn">Search</button>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="row-fluid">
+                <div class="span3 hidden-phone">
+                  <div class="well text-center">
+                    <a href="#">Monthly Offer</a>
+                  </div>
+                </div>
+                <div class="span3 hidden-phone">
+                  <div class="well text-center">
+                    <a href="#">Quaterly Offer</a>
+                  </div>
+                </div>
+                <div class="span3 hidden-phone">
+                  <div class="well text-center">
+                    <a href="#">Yearly Offer</a>
+                  </div>
+                </div>
+                <div class="span3 hidden-phone">
+                  <div class="well text-center">
+                    <i class="pe-7s-car"/><a href="/managecar">manage Booking</a>
+                  </div>
+                </div>
+              </div>
+           
+      <!-- PAGE-HEADER-->
+      </div>
+     </div>
+      
+      <!-- MAIN CONTAINER-->
+      <div class="container">
+        <div class="row-fluid">
+            <!-- LEFT SIDE CATEGORIES-->   
+            <div class="span3">         
+                <div class="well">
+                    <ul id="cat-navi" class="nav nav-list">
+                    <li class="nav-header">Shop by Product</li>
+                    <!-- <li class="active"><a href="#">Active category</a></li> -->
+                    <li><a href="#">Luxury</a></li>
+                    <li><a href="#">Sport</a></li>
+                    <li><a href="#">Sedan</a></li>
+                    <li><a href="#">SUV</a></li>
+                    <li><a href="#">Hatchback</a></li>
+                    </ul>
+                    <hr>        
+                </div><!-- /well--> 
+            </div>
+            <!-- /left SIDE--> 
+        
+        <!-- CONTENT SIDE-->
+        <div class="span9">
+            <!-- MAIN PRODUCTS GRID-->
+            <div class="row-fluid container-folio" id="displaycar">
+                <!-- product Grid -->
+                <div class="span12">
+                    <div class="thumbnail">
+                      <img src="http://images.nadaguides.com/ChromeImageGallery/Expanded/White/320/2016TOC190002_320/2016TOC190002_320_01.jpg" alt="post image">
+                      <div class="caption">
+                      <h3 class=""><span class="lead" id="lblbrand"></span> <span id="lblmodel" class="lead"></span></h3>
+                        <p class="">Complete the form and hire the car!</p>
+                        <div class="row-fluid">
+                          <div class="span3">
+                            <input type="text" id="txtCarBrand"  class="form-control" placeholder="Car Brand" style="height:30px" />
+                          </div>
+                          <div class="span3">
+                              <input type="text"  id="txtCarModel" class="form-control" placeholder="Car Model" style="height:30px"/>
+                          </div>
+                        </div>
+                        <div class="row-fluid">
+                            <div class="span3">
+                              <input type="text" id="txtFullName"  class="form-control" placeholder="Full Name" style="height:30px" />
+                            </div>
+                            <div class="span3">
+                                <input type="text"  id="dtFrom" class="form-control" placeholder="From Date" style="height:30px"/>
+                            </div>
+                            <div class="span3">
+                                <input type="text" id="dtTo" class="form-control" placeholder="To Date" style="height:30px"/>
+                            </div>
+                            <div class="span3">
+                                <span class="lead" id="ether"></span>
+                            </div>
+                        </div>
+                        <div class="row-fluid">
+                          <div class="span6">
+                              <input type="text" id="txtAddress" class="form-control" placeholder="Account Address" style="height:30px;width:100%" />
+                          </div>
+                          <div class="span3">
+                            <span id="totalcost"></span>
+                          </div>
+                          <div class="span3">
+                            <a class="btn btn-success btn-block" href="#" id="btnHire">Hire !</a>
+                          </div>
+                        </div>
+                        <div class="row-fluid">
+                            <div class="span12">
+                                Transaction Id : <span id="txn"></span>
+                            </div>
+                        </div>
+                        <!-- <div class="row-fluid">
+                            <div class="span12">
+                                Confirmation Status: <span id="lblcnfrm"></span>
+                            </div>
+                        </div> -->
+                      </div> 
+                    </div>
+                  </div>
+            </div>
+            <!-- /INNER ROW-FLUID-->
+         </div>
+        <!-- /CONTENT SIDE-->
+        
+      </div>
+      
+      <!-- FOOTER-->
+      <footer class="row-fluid">        
+        <div class="span12">
+            <hr>
+                <p>© Rent Car - Viral Gohil 2018</p>
+        </div>      
+      </footer>
+      <!-- /Footer-->
+      </div> <!-- /container -->
+      <!--/ CONTENT -->
+    </body>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="js/jquery.3.2.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> 
+    <script src="js/socket.io.js"></script>  
+</html>
+    
+<script>
+  var Id = getParameterByName('Id');
+  
+  $(document).ready(function(){
+      loadCar(Id);
+  });
+
+  $(function() {
+        dateToday = new Date();
+        dateFormat = "mm/dd/yyyy",
+        from = $("#dtFrom")
+          .datepicker({
+            minDate: dateToday,
+          })
+          .on( "change", function() {
+            to.datepicker( "option", "minDate", getDate(this));
+          }),
+        to = $("#dtTo").datepicker()
+        .on( "change", function() {
+          from.datepicker( "option", "maxDate", getDate(this));
+        });
+ 
+      function getDate( element ) {
+        var date;
+        try {
+          date = $.datepicker.parseDate(dateFormat, element.value );
+        } 
+        catch( error ) {
+          date = null;
+        }
+        return date;
+      }
+  });
+
+    function loadCar(Id){
+      $.ajax({
+          url:'/findcar?Id='+Id,
+          type:'GET',
+          success:function(data){
+            $("#txtCarBrand").val(data[0]);
+            $("#txtCarModel").val(data[1]);
+          },
+          error:function(){
+            //log error ajaxx failed
+          }     
+      });
+    }
+    
+    $("#btnHire").click(function() {
+      var name = $("#txtFullName").val();
+      var from = new Date($("#dtFrom").val());
+      var to = new Date($("#dtTo").val());
+      var accAdd = $("#txtAddress").val();
+
+      var timeDiff = Math.abs(from.getTime() - to.getTime());
+      var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24)); 
+
+      if(diffDays > 0){
+          $.ajax({
+            url:'/bookcar?index='+Id+'&name='+name+"&from="+Date.parse(from.toString())+"&to="+Date.parse(to.toString())+"&account="+accAdd+"&days="+diffDays,
+            type:'GET',
+              success:function(data){
+                $("#txn").text(data);
+              },
+              error:function(){
+               //log error - ajax failed 
+              }
+          });
+        }
+    });
+
+    function getParameterByName(name) {
+      var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+      return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+    }
+</script>
