@@ -1,13 +1,36 @@
-Rent A Car
---------------------------------------------------------------------------------------------
-PoC the rent a car with ether cryptocurreny. It is implemented on ethereum private blockchain. Technologies use to built this is - NodeJS, HTML5, JavaScript, JQuery, ExpressJS, Bootstrap, Solidity, geth.
+# CarRentalChain
 
+Product Concept to rent a car backed by Etherum Blockchain. Customer can rent car new currencies of the world i.e Ether. Concept is full designed and implemented on ethereum private blockchain. Technologies use to built this is - NodeJS, HTML5, JavaScript, JQuery, ExpressJS, Bootstrap, Solidity, geth.
 
-Instruction
--------------------------------------------------
-- Install the geth,ethereum in the environment
-- Download the project and install the dependencies i.e. NodeJS,ExpressJS
-- Run the geth
-- Deploy the contract (run node command i.e. node yourprojectpath/js/deploy.js) from the node console and copy the contract mining address.
-- Modified the contract address in app.js and restart the node server
-- Node is configure to listen on the port 8080 of localhost, so browse to http://localhost:8080
+## Pre-requisite 
+
+NodeJs download link below
+```bash 
+https://nodejs.org/en/download/
+```
+Geth download link below
+
+```bash 
+https://geth.ethereum.org/downloads/
+```
+
+## Deploy Smart Contract
+
+```bash
+node <app-directory>/js/deploy.js
+```
+
+## Usage
+
+- Copy the smart contract address from the console and replace it with new in app.js
+- By Default app is configure to run on port 8080
+- Run the app with following in bash
+```bash
+node app.js
+```
+- Go the Browser and navigate to url : http://localhost:8080 and land page of will be served.
+- Navigate admin section and add few cars
+- Use multiple across with sufficient ether balance and start renting the car
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
