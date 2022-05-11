@@ -1,6 +1,6 @@
 # CarRentalChain
 
-Product Concept to rent a car backed by Etherum Blockchain. Customer can rent car new currencies of the world i.e Ether. Concept is full designed and implemented on ethereum private blockchain. Technologies use to built this is - NodeJS, HTML5, JavaScript, JQuery, ExpressJS, Bootstrap, Solidity, geth.
+Product Concept to rent a car backed by Etherum Blockchain. Customer can rent car new with currencies of the world i.e Ether. Concept is fully designed and implemented on ethereum private blockchain. Technologies use to built this is - NodeJS, HTML5, JavaScript, JQuery, ExpressJS, Bootstrap, Solidity, geth.
 
 ## Pre-requisite 
 
